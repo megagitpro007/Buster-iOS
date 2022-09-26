@@ -8,7 +8,7 @@
 import UIKit
 
 class SplashViewController: UIViewController {
-
+    
     @IBOutlet weak var logo: UILabel!
     @IBOutlet weak var mainView: UIView!
     
@@ -16,6 +16,15 @@ class SplashViewController: UIViewController {
         super.viewDidLoad()
         self.setGradient()
         self.prepare()
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3, execute: { [weak self] in
+            if let vc = self?.storyboard?.instantiateViewController(withIdentifier: Scene.landing.name) as? LandingViewController {
+                let nav = UINavigationController(rootViewController: vc)
+                nav.modalPresentationStyle = .fullScreen
+                self?.present(nav, animated: false)
+            }
+        })
+        
     }
     
     func setGradient() {
@@ -27,7 +36,7 @@ class SplashViewController: UIViewController {
         gradient.frame = self.view.layer.frame
         mainView.layer.insertSublayer(gradient, at: 0)
     }
-
+    
     func prepare() {
         self.view.backgroundColor = .busterBGMain
         self.logo.textColor = .white
