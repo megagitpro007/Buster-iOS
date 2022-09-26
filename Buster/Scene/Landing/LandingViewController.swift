@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  LandingViewController.swift
 //  Buster
 //
 //  Created by iZE Appsynth on 20/9/2565 BE.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LandingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
