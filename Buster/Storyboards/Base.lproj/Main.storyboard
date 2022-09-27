@@ -70,14 +70,44 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W4Z-xN-B2Y">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="230"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Ogv-QR-xdW">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="230"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ang-VB-uFw">
+                                            <size key="itemSize" width="128" height="128"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells/>
+                                    </collectionView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="230" id="TbS-28-Kn4"/>
+                                    <constraint firstItem="Ogv-QR-xdW" firstAttribute="top" secondItem="W4Z-xN-B2Y" secondAttribute="top" id="ZkW-hd-vma"/>
+                                    <constraint firstItem="Ogv-QR-xdW" firstAttribute="leading" secondItem="W4Z-xN-B2Y" secondAttribute="leading" id="a0h-Ch-WIR"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ogv-QR-xdW" secondAttribute="bottom" id="afx-M9-Th0"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ogv-QR-xdW" secondAttribute="trailing" id="kQ6-DQ-f4S"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.42699098590000001" green="0.57291448119999999" blue="0.79355770349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="mdm-JR-csq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ApP-25-ssl"/>
+                            <constraint firstItem="W4Z-xN-B2Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FBV-tS-FjQ"/>
+                            <constraint firstItem="W4Z-xN-B2Y" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="JhQ-dD-dSD"/>
                             <constraint firstItem="mdm-JR-csq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SM1-uS-Nxn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="W4Z-xN-B2Y" secondAttribute="trailing" id="ddn-0E-AqW"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bannerCollectionView" destination="Ogv-QR-xdW" id="aL8-hg-cP5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

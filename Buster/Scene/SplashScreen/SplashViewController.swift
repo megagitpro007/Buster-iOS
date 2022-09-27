@@ -9,8 +9,8 @@ import UIKit
 
 class SplashViewController: UIViewController {
     
-    @IBOutlet weak var logo: UILabel!
-    @IBOutlet weak var mainView: UIView!
+    @IBOutlet private var logo: UILabel!
+    @IBOutlet private var mainView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +19,7 @@ class SplashViewController: UIViewController {
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 3, execute: { [weak self] in
             if let vc = self?.storyboard?.instantiateViewController(withIdentifier: Scene.landing.name) as? LandingViewController {
+                vc.viewModel = LandingViewModel()
                 let nav = UINavigationController(rootViewController: vc)
                 nav.modalPresentationStyle = .fullScreen
                 self?.present(nav, animated: false)

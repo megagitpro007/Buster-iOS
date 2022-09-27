@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E2563D5428E34D3900C98C3A /* LandingBannerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2563D5328E34D3900C98C3A /* LandingBannerView.xib */; };
+		E2563D5628E34D7E00C98C3A /* LandingBannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2563D5528E34D7E00C98C3A /* LandingBannerCollectionViewCell.swift */; };
+		E269150228E33917009ABE69 /* LandingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E269150128E33917009ABE69 /* LandingViewModel.swift */; };
+		E269150628E33B8C009ABE69 /* BannerSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E269150528E33B8C009ABE69 /* BannerSection.swift */; };
+		E269150828E33BE0009ABE69 /* BannerListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E269150728E33BE0009ABE69 /* BannerListModel.swift */; };
 		E2E668B528E1D84100E960E4 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2E668B228E1D84100E960E4 /* Roboto-Regular.ttf */; };
 		E2E668B628E1D84100E960E4 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2E668B328E1D84100E960E4 /* Roboto-Bold.ttf */; };
 		E2E668B728E1D84100E960E4 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2E668B428E1D84100E960E4 /* Roboto-Medium.ttf */; };
@@ -28,6 +33,11 @@
 		0928330BAE50B46F9530D3E6 /* Pods_Buster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Buster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2220E541FE177756F0D51628 /* Pods-Buster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Buster.release.xcconfig"; path = "Target Support Files/Pods-Buster/Pods-Buster.release.xcconfig"; sourceTree = "<group>"; };
 		6D86220B884BD4B847C61849 /* Pods-Buster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Buster.debug.xcconfig"; path = "Target Support Files/Pods-Buster/Pods-Buster.debug.xcconfig"; sourceTree = "<group>"; };
+		E2563D5328E34D3900C98C3A /* LandingBannerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LandingBannerView.xib; sourceTree = "<group>"; };
+		E2563D5528E34D7E00C98C3A /* LandingBannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingBannerCollectionViewCell.swift; sourceTree = "<group>"; };
+		E269150128E33917009ABE69 /* LandingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewModel.swift; sourceTree = "<group>"; };
+		E269150528E33B8C009ABE69 /* BannerSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerSection.swift; sourceTree = "<group>"; };
+		E269150728E33BE0009ABE69 /* BannerListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerListModel.swift; sourceTree = "<group>"; };
 		E2E668B228E1D84100E960E4 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		E2E668B328E1D84100E960E4 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		E2E668B428E1D84100E960E4 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
@@ -75,6 +85,31 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E2563D5228E34D0A00C98C3A /* LandingBannerView */ = {
+			isa = PBXGroup;
+			children = (
+				E2563D5328E34D3900C98C3A /* LandingBannerView.xib */,
+				E2563D5528E34D7E00C98C3A /* LandingBannerCollectionViewCell.swift */,
+			);
+			path = LandingBannerView;
+			sourceTree = "<group>";
+		};
+		E269150328E33ADD009ABE69 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				E269150528E33B8C009ABE69 /* BannerSection.swift */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		E269150428E33AE7009ABE69 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				E269150728E33BE0009ABE69 /* BannerListModel.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		E2E668AA28E1D35600E960E4 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -105,7 +140,10 @@
 		E2E668AD28E1D39700E960E4 /* Landing */ = {
 			isa = PBXGroup;
 			children = (
+				E269150328E33ADD009ABE69 /* Sections */,
 				E2FCB79528D9F54F000A0DBC /* LandingViewController.swift */,
+				E269150128E33917009ABE69 /* LandingViewModel.swift */,
+				E2563D5228E34D0A00C98C3A /* LandingBannerView */,
 			);
 			path = Landing;
 			sourceTree = "<group>";
@@ -113,6 +151,7 @@
 		E2E668AE28E1D3B300E960E4 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				E269150428E33AE7009ABE69 /* Entities */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -264,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2FCB79E28D9F550000A0DBC /* LaunchScreen.storyboard in Resources */,
+				E2563D5428E34D3900C98C3A /* LandingBannerView.xib in Resources */,
 				E2FCB79B28D9F550000A0DBC /* Assets.xcassets in Resources */,
 				E2E668B728E1D84100E960E4 /* Roboto-Medium.ttf in Resources */,
 				E2E668B628E1D84100E960E4 /* Roboto-Bold.ttf in Resources */,
@@ -327,8 +367,12 @@
 				E2FCB79628D9F54F000A0DBC /* LandingViewController.swift in Sources */,
 				E2FCB79228D9F54F000A0DBC /* AppDelegate.swift in Sources */,
 				E2FCB79428D9F54F000A0DBC /* SceneDelegate.swift in Sources */,
+				E2563D5628E34D7E00C98C3A /* LandingBannerCollectionViewCell.swift in Sources */,
 				E2E668C228E1DE2000E960E4 /* LoadingView.swift in Sources */,
+				E269150628E33B8C009ABE69 /* BannerSection.swift in Sources */,
+				E269150228E33917009ABE69 /* LandingViewModel.swift in Sources */,
 				E2E668BC28E1DAA400E960E4 /* SplashViewController.swift in Sources */,
+				E269150828E33BE0009ABE69 /* BannerListModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
