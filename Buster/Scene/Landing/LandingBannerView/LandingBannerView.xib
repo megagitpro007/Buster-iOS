@@ -23,10 +23,10 @@
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstItem="Db0-iz-F9i" firstAttribute="top" secondItem="XDk-pE-5FB" secondAttribute="top" id="2V3-QG-fzE"/>
-                    <constraint firstAttribute="bottom" secondItem="Db0-iz-F9i" secondAttribute="bottom" id="6Av-Rp-plG"/>
-                    <constraint firstAttribute="trailing" secondItem="Db0-iz-F9i" secondAttribute="trailing" id="UIg-AM-jHK"/>
-                    <constraint firstItem="Db0-iz-F9i" firstAttribute="leading" secondItem="XDk-pE-5FB" secondAttribute="leading" id="pWP-9g-qTk"/>
+                    <constraint firstItem="Db0-iz-F9i" firstAttribute="leading" secondItem="XDk-pE-5FB" secondAttribute="leading" id="1Nl-fO-GDc"/>
+                    <constraint firstItem="Db0-iz-F9i" firstAttribute="top" secondItem="XDk-pE-5FB" secondAttribute="top" id="E9H-gj-kud"/>
+                    <constraint firstAttribute="bottom" secondItem="Db0-iz-F9i" secondAttribute="bottom" id="T7i-zv-xq2"/>
+                    <constraint firstAttribute="trailing" secondItem="Db0-iz-F9i" secondAttribute="trailing" id="rV2-34-ZKE"/>
                 </constraints>
             </collectionViewCellContentView>
             <size key="customSize" width="424" height="171"/>
